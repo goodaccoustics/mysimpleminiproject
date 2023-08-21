@@ -3,7 +3,7 @@ resource "aws_instance" "ec2" {
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"
-  subnet_id = "subnet-0710a8aa03ea744aa"
+  subnet_id = "subnet-044b09d27aa26415c"
   vpc_security_group_ids = ["sg-0c3f63d5afd6fa587"]
 
   tags = {
@@ -16,7 +16,7 @@ resource "aws_instance" "ec2-ansibleserver" {
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"
-  subnet_id = "subnet-0710a8aa03ea744aa"
+  subnet_id = "subnet-044b09d27aa26415c"
   vpc_security_group_ids = ["sg-0c3f63d5afd6fa587"]
   user_data = <<EOF
     #!/bin/bash
