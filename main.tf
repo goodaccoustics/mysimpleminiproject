@@ -20,9 +20,9 @@ resource "aws_instance" "ec2-ansibleserver" {
   vpc_security_group_ids = ["sg-0c3f63d5afd6fa587"]
   user_data = <<EOF
     #!/bin/bash
-    yum update -y
-    yum install pip -y
-    python3 -m pip install --user ansible
+    sudo yum update -y
+    sudo yum install pip -y
+    sudo python3 -m pip install --user ansible
   EOF
 
   tags = {
