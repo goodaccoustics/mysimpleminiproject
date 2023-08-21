@@ -1,5 +1,5 @@
 resource "aws_instance" "ec2" {
-  ami           = "ami-0f34c5ae932e6f0e4"  # Amazon Linux 2 LTS
+  ami           = "ami-08a52ddb321b32a8c"  # Amazon Linux 2 LTS
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"
@@ -12,7 +12,7 @@ resource "aws_instance" "ec2" {
 }
 
 resource "aws_instance" "ec2-ansibleserver" {
-  ami           = "ami-0f34c5ae932e6f0e4"  # Amazon Linux 2 LTS
+  ami           = "ami-08a52ddb321b32a8c"  # Amazon Linux 2 LTS
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"
