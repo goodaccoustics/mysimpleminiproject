@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "justinlim-backend-bucket"
-    key = "terraform/"
+    key = "terraform"
     region = "us-east-1"
   }
 }
