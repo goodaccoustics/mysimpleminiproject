@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "justinlim-backend-bucket"
+    key = "/"
+    region = "us-east-1"
+  }
+}
+
 resource "aws_instance" "ec2" {
   ami           = "ami-08a52ddb321b32a8c"  # Amazon Linux 2 LTS
   instance_type = "t2.micro"
