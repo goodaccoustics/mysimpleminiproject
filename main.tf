@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "sctp-ce3-tfstate-bkt"
-    key = "justinlim"
-    region = "ap-southeast-1"
+    bucket = "sctp-ce3-tfstate-bucket"
+    key = "justinlim.tfstate"
+    region = "us-east-1"
   }
 }
 
