@@ -26,8 +26,9 @@ jobs:
        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
        aws-region: "us-east-1"
 
+##CI
    - name: Lint Terraform
-     run: terraform fmt -check
+     run: terraform fmt -recursive
 
    - name: Initialize Terraform
      run: terraform init
@@ -36,6 +37,7 @@ jobs:
      id: validate
      run: terraform validate -no-color
 
+##CD     
    - name: Terraform Plan
      run: terraform plan
 
