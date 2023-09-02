@@ -7,7 +7,7 @@ terraform {
 }
 
 resource "aws_instance" "ec2" {
-  ami           = "ami-051f7e7f6c2f40dc1"  # Amazon Linux 2 LTS
+  ami           = "ami-051f7e7f6c2f40dc1"
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"
@@ -20,7 +20,7 @@ resource "aws_instance" "ec2" {
 }
 
 resource "aws_instance" "ec2-ansibleserver" {
-  ami           = "ami-051f7e7f6c2f40dc1"  # Amazon Linux 2 LTS
+  ami           = "ami-051f7e7f6c2f40dc1"
   instance_type = "t2.micro"
   key_name = "justinlim-keypair-macbookair"
   associate_public_ip_address = "true"

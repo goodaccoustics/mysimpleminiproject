@@ -1,0 +1,9 @@
+[webservers]
+172.31.1.134
+172.31.13.33
+
+[pri-webservers]
+172.31.1.134
+
+[sec-webservers]
+172.31.13.33
